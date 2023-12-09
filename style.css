@@ -1,0 +1,123 @@
+@font-face {
+    font-family: moon;
+    src:url("moon.otf");
+}
+@font-face {
+    font-family: tradewinds;
+    src:url("TradeWinds.ttf");
+}
+@font-face {
+    font-family:oswald;
+    src:url("oswald.ttf");
+}
+body{       background-image: radial-gradient(900px 700px  at top,rgb(69, 42, 139), #15153b,#050416);
+min-height: 100vh; }
+ #line1{
+    display: flex;
+}
+header{color:antiquewhite;
+    font-family:moon;
+    font-weight: bold;
+    color:antiquewhite;
+    font-size:40px;
+    margin-left:15px;
+    }
+nav {
+    display:flex;
+    list-style:none;
+    margin-left:150px;
+    width:70%; /*of div(the parent)*/
+}
+body a {
+    padding:10px;
+    color:white;
+    text-decoration:none;
+    font-size: 15px;
+    font-family:tradewinds;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.3s ease;}
+   body a:hover {
+        color: rgb(181, 146, 255);
+        font-size: 25px;
+    }
+nav li{    margin:10px 20px 10px 20px;
+}
+#id1{margin-left:40%;}  /*% of his parent*/
+.Y {
+text-align: center;
+    margin-top:100px;
+}
+.Y a{    color: #b592ff;}
+.A{color:antiquewhite;
+    text-align:center;
+    font-family:Arial;
+    font-size:50px;}
+.descriptions,table p{text-align:center;
+    font-family:Arial;
+    line-height:1.5em;
+    color: #b0aeae;
+    font-size:20px;
+}
+#freetrial{text-align: center;
+    margin-top:50px;
+}
+#free{background-color:mediumpurple;
+font-family:Arial;
+    font-size:25px;
+border-radius:15px;
+}
+#image{
+    width:auto;
+    height: auto;
+    margin-left:150px;
+    margin-top:15px;
+}
+table {
+    color:antiquewhite;
+    font-family:Arial;
+    text-align:center;
+    font-size:20px;
+    border:0px rgba(181, 146, 255, 0.27) solid;
+    margin:auto;
+width:800px;
+height:600px;
+}
+#logo{
+    border-radius:20px;                       /*why when I use border-image:linear-gradient(to right,mediumpurple,white) 1% ,border-varius doesn't work??*/
+color: #c486ff;
+font-size:20px;
+    border:5px solid;
+    border-color: #7400ff #c79aff #d2b3ff #7f00f6;
+    animation-name: mylogo;
+    animation-timing-function:ease;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    cursor:pointer;
+}
+@keyframes mylogo{
+    0%{
+        translate:0 0;
+    }
+    20%{translate:0 75px;
+    rotate:60deg;}
+    40%{translate:1300px 75px;rotate:120deg;
+   }
+    60%{translate:1300px 0;rotate:180deg;}
+    80%{translate:1300px 75px;rotate:240deg;}
+    90%{translate:0 75px;rotate:300deg;}
+    100%{translate:0 0;rotate:360deg;}
+
+}
+
+
+
+
+
+
+
