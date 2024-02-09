@@ -1,0 +1,209 @@
+@font-face {
+    font-family: moon;
+    src:url("../fonts/moon.otf");
+}
+@font-face {
+    font-family: kauchan;
+    src:url("../fonts/kaushan.otf");
+}
+@font-face {
+    font-family: tradewinds;
+    src:url("../fonts/TradeWinds.ttf");
+}
+@font-face {
+    font-family: oswald;
+    src:url("../fonts/oswald.ttf");
+}
+
+header {
+    font-family:Jokerman;
+    font-size: 50px;
+    color:whitesmoke;
+    text-shadow:10px 10px 5px black;
+}
+
+#line1 {
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 80px;
+    color: black;
+    font-weight: bold;
+    font-family: kauchan;
+    transition-timing-function: ease;
+    transition-property: all;
+}
+body{
+    background-image:url("../images/WHITERED.jpg");
+    background-size:cover;
+}
+body a:hover {
+    color:whitesmoke;
+}
+nav {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    color: black;
+    margin: 10px 20px 10px 20px;
+}
+
+.A {
+    color: antiquewhite;
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
+}
+
+.Y {
+    background-image: url("../images/BLACK&RED.jpg");
+    width: 900px;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.textonimage {
+    text-align: center;
+    color: navajowhite;
+    font-family: oswald;
+    text-align: center;
+}
+
+.sm {
+    color: black;
+    font-family: tradewinds;
+    margin-left: 15px;
+}
+
+.sm img {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    filter:blur(1px);
+}
+.sm img:hover{
+    filter: blur(0);
+    transform:scale(2);
+}
+.imgs img {
+    width: 400px;
+    height: 300px;
+}
+
+.imgs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.decouvrir a {
+    font-size: 25px;
+    color: black;
+    border: 5px solid rgba(0, 0, 0, 0.62);
+    background-color: rgba(0, 0, 0, 0.62);
+    border-radius: 30px;
+}
+
+.decouvrir {
+    margin-top: 15px;
+}
+
+.description {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    font-family: arial;
+}
+#monimage{
+    width:70px;
+    height: 70px;
+    animation-name: mylogo;
+    animation-timing-function:ease;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    cursor:pointer;
+}
+#logo:hover{
+    color:wheat;
+}
+#imgcontainer{
+    text-align:center;
+    margin-top:15px;
+}
+@keyframes mylogo {
+    0%{
+        translate:0 0;
+    }
+    50%{
+        rotate:360deg;}
+    70%{
+        translate:70px 70px;
+    }
+    80%{
+        translate:-70px 70px;
+    }
+    100%{
+        translate:0 0;
+    }
+}
+#stat{
+    font-family: tradewinds;
+    font-size:30px;
+    text-align:center;
+    background-color:black;
+    width:100px;
+    border:5px greenyellow solid;
+    border-radius: 30px;
+}
+#click{
+    margin-top:10px;
+    text-align: center;
+}
+header:hover{
+    color:white;
+
+}
+@media only screen and (max-width: 600px) {
+.Y,nav{
+    display:none;
+}
+    header{
+        font-size: 40px;
+        margin:auto;
+        margin-top:50px;
+    }
+    body{
+        background-image: url("../images/this.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   #click{
+       margin-top:50px;
+   }
+   #monimage{
+       margin-top:50px;
+   }
+    @keyframes mylogo {
+        0%{
+            translate:0 0;
+        }
+        50%{
+            rotate:360deg;}
+        70%{
+            translate:100px 100px;
+        }
+        80%{
+            translate:-100px 100px;
+        }
+        100%{
+            translate:0 0;
+        }
+    }
+}
